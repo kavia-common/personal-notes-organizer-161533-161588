@@ -2,11 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-primary: #4F8AF4;
+  --color-secondary: #576574;
+  --color-accent: #FF9800;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+  @apply bg-white;
 }
